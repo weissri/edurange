@@ -1,0 +1,139 @@
+\documentclass[11pt]{report}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{url}
+
+\begin{document}
+
+\begin{center} 
+{\Large IUSE {\em EDURange: Building Capacity for Teaching Cybersecurity Analysis Skills}}
+\end{center}
+
+The objective of this collaborative project is to create interactive, competitive 
+cybersecurity exercises that will be easy for computer science faculty to employ in the 
+classroom, even if they do not have prior expertise in this domain.  The exercises 
+will be accompanied by tutorial-style instructional materials and linked to learning objectives. 
+As such, they will combine instruction and assessment, with an emphasis on
+analytical skills.
+
+%Teaching security analysis skills to undergraduates presents an
+%imposing challenge for several reasons.  First, information security
+%curriculum can be difficult to formulate and weave in to existing
+%classes, particularly for instructors with little background in
+%information security and assurance.  In addition, most existing
+%security curriculum and exercises focus on teaching students basic
+%secure coding practices ({\it e.g.}, input validation, bounds and
+%error code checking) and lack an interactive, experiential learning
+%component.  Lab exercises that {\em do} offer an experiential
+%component (e.g., DamnVulnLinux, Bank) often lack configurability along
+%with documentation explaining the security implications of such
+%configuration choices: a major obstacle for overburdened faculty
+%members without expertise in information security.  
+
+%Such exercises need to be self-contained and easy to use.
+%Google's Grugeyere is an interesting counterpoint, but only deals with
+%web vulnerabilities.  
+%Even if instructors do adopt existing in-depth lab exercises, the
+%inherently scripted nature of such activity almost ensures that any
+%such activity is unsustainable beyond a few exercises. [Needs work
+%-MEL]
+Almost no tools exist for helping students assess and
+understand the quality (and limits) of their own security analysis
+skills.  Although most principles of ``secure'' software and systems
+design include advice about best practices, such activities are rarely
+rewarded by the traditional academic process or even applicable to
+many standard course assignements in the core CS undergraduate
+curriculum.  Indeed, learning and developing the skills and principles
+related to testing, debugging, analsyis, and reliability can represent
+a significant investment of student time for little perceived gain. As
+a result, students perceive such efforts as a distraction, and
+students rarely perform any meaningful reliability or security
+assessment of their class assignments.  Worse yet, when they do
+attempt to internalize testing concepts, they often do so solely via
+the use of an automated regression test suite --- although useful for
+catching some unintended bugs or incompatible changes, rote
+formulation of regression testing does not reward careful and
+thoughtful analysis of security failure modes.
+
+This proposal contemplates an interactive, team competition-based
+approach to learning and practicing cybersecurity skills and
+principles in an open-source, publicly available, customizable,
+``live-fire'' setting.  This platform specifically rewards the time
+students spend on analysis, debugging, testing, and
+reverse-engineering.  
+
+%This proposal seeks to identify ways in which we
+%can construct a competition-based cybersecurity environment that has
+%the right incentives to help students learn and instructors teach {\em
+%  meaningful} security analysis, assurance, reliability, testing, and
+%debugging skills, patterns, and principles.
+% [the above sentence is a bit heavy-handed. needs judicious cutting. -MEL]
+
+%\noindent {\bf Intellectual Merit:} Interactive information security
+%scenarios provides students with a valuable tool for imparting
+%practical experience with {\em analyzing failure modes, applying
+%  debugging patterns, and developing assurance arguments}, but
+%creating them is a labor-intensive process. In addition, exercises are
+%prone to becoming rapidly outdated, and existing efforts typically
+%suffer from poor documentation (or lack such documentation
+%altogether).
+
+The intellectural merit of this proposal stems from two efforts.
+First, EDURange will reward students for understanding and
+internalizing hacker curriculum principles and approaches, such as
+learning through failure modes --- not just learning specific tools or rote skills
+such as the creation of test cases or regression tests.  EDURange is
+designed to provide students with an un-scripted active learning
+environment so that students see the value of developing analysis
+skills rather than training based on a pre-packaged set of tools.
+
+Second, the project will address a key {\em research} question:
+investigating and gaining an understanding of how best to represent and explain the
+security implications and semantics of a small but comprehensive set of
+configuration choices (the parameter space of a scenario) to an
+instructor with limited knowledge of information security.  
+%The lack
+%of such insight and documentation is a significant flaw of existing
+%cybersecurity exercises.
+
+The research and development agenda focuses on investigating three
+core issues: $(1)$ the construction of a suite of cybersecurity
+scenarios; $(2)$ the deployment of this platform in a variety security
+testbeds and cloud environments (at no cost to students or
+instructors); and $(3)$ an understanding of how such scenarios might
+be used as an evaluation and assessment tool for both students in the
+course of their studies as well as an independent benchmark for other
+cybersecurity training programs, curricula, and exercises.
+
+%\noindent {\bf Broader Impact:} 
+This proposal seeks to develop and
+deploy EDURange as an open-access security scenario environment.
+Several planned outcomes support the ability of this proposal to have
+such an impact.  First, the successful proposal will have as an
+outcome a set of well-documented scenarios of varying difficulty
+(transparent, open-access results).  Second, these scenarios will be
+implemented and hosted in a stable, widely-available infrastructure in
+an existing cybersecurity testbed and in a cloud environment (specific
+dissemination plan for real-world impact).  Such wide availability
+enables EDURange to serve as an independent benchmark or assessment
+tool for other cybersecurity curricula.  Third, the proposal
+contemplates a SIGCSE workshop (specific, high-impact outreach effort)
+to introduce the scenarios and EDURange environment to students and
+instructors. Finally, the PIs plan to implement the use of EDURange at
+their own institutions, with the goal of having graduating seniors
+over the lifetime of the grant participate in at least one scenario.
+
+We contemplate a significant outreach effort aimed at providing
+students and instructors with a usable, configurable, and
+well-documented cybersecurity scenario environment.  Our goal in this
+outreach is to provide a publicly accessible environment with a
+minimal barrier to entry.  EDURange helps students buy into the
+process of sharpening their information security analysis skills and
+makes them a partner in evaluating and understanding the limits of
+those skills.
+
+\noindent {\bf Key Words:} EDURange; cyber range; hacker curriculum
+principles; teaching security failure modes; debugging patterns;
+information security curriculum; live-fire cyber range exercises;
+hacker bibliography.
+\end{document}

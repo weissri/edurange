@@ -1,0 +1,58 @@
+\documentclass[11pt]{report}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\newcommand{\eat}[1]{}
+\renewcommand{\thesection}{\Alph{section}}
+
+%from http://devdaily.com/blog/post/latex/control-line-spacing-in-itemize-enumerate-tags/
+\newenvironment{packenum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+\makeatletter
+    \def\thebibliography#1{\chapter*{References Cited\@mkboth
+      {REFERENCES CITED}{REFERENCES CITED}}\list
+      {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \usecounter{enumi}}
+      \def\newblock{\hskip .11em plus .33em minus .07em}
+      \sloppy\clubpenalty4000\widowpenalty4000
+      \sfcode`\.=1000\relax}
+    \makeatother
+
+\newcommand{\comment}[1]{}
+\newcommand{\weiss}[1]{{\color{blue} [Richard: #1]}}
+\newcommand{\mache}[1]{{\color{red} [Jens: #1]}}
+\newcommand{\locasto}[1]{{\color{green} [Michael: #1]}}
+
+\begin{document}
+
+%TODO: include related.tex and datamanage.tex
+
+\input{intro} %problem outline, motivation, goals, outcomes
+\input{related}
+\input{modules} %current infrastructure and value
+\input{activities} % what we will do new (how to enhance existing value)
+\input{assessment} % our evaluation plan
+\input{management} % timeline, management plan
+
+\newpage
+
+\input{datamanage}
+
+\newpage
+\setcounter{page}{1}
+
+\bibliographystyle{plain}
+\bibliography{livefire}
+
+\end{document}

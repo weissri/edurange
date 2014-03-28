@@ -1,0 +1,107 @@
+\section*{EDURange Exercises}
+
+{\bf organization and elements, learning implications}
+
+ Targeted audience is 2-fold: (1) ``just want an exercise''/inexperienced
+ (2) experienced...want configuration, etc.
+
+%   First discuss EDURange infrastructure
+\subsection{EDURange infrastructure}
+EDURange allows instructors and designers to specify exercises at multiple levels of detail.
+Using yaml as an intermediate representation, one can specify the structure of an exercise.
+There are six types of entities that we have identified as important:
+\begin{itemize}
+  \item Nodes, e.g. could be a VM, attributes of the node would include players
+  \item Networks,  collections of nodes and the connections among them
+  \item Software, which is necessary for the correct functioning of the exercise, including versions
+  \item Constraints, e.g. time limits, 
+  \item Goals, i.e. learning objectives
+  \item Artifact, e.g. a file that is placed on a target
+\end{itemize}
+Actually, the yaml file is different: groups, users, roles (an attribute), packages (Chef scripts for software)
+
+
+\subsection{Existing Exercises}
+\subsubsection{Recon I}
+% CS2013 Curricula P.101 give the overview
+Recon I  is a reconnaissance exercise, where students learn how to explore a network.
+The learning goals for this exercise are:
+\begin{itemize}
+\item understand networking protocols (TCP, UDP, ICMP) and how they can be exploited for recon.
+\item develop the security mindset
+\item understand CIDR network configuration and how subdivide a network IP range.
+\item use nmap to find hosts and open ports on a network.
+\end{itemize}
+Concepts from CS 2013 addressed by this module:
+\begin{itemize}
+\item  risk, threats, vulnerabilities, and attack vectors.  This exercise shows how one might 
+  find vulnerabilities
+\end{itemize}
+
+
+This exercise is relevant for both defensive and offensive roles.  [it currently has one level]
+There are a dozen hosts on a remote network, and the student tries to find all of them as quickly as 
+possible, and discover what what ports are open and what services are running.  At the knowledge level,
+the student is learning to use nmap and what options it uses.  At a higher level, the student is learning
+about the TCP, UDP and ICMP protocols and how they can be used in ways that may have not been intended.
+[more advanced: look for hosts and services that should not be on the network, knowing what to expect]
+
+EDURange provides the capability to run the same basic scenario, changing the IP addresses and open ports
+of the target hosts.  This allows students to repeat the exercise while trying different options of nmap to
+find those that meet the goals of a particular variation of the exercise.  For example, the intructor
+might ask students to focus on speed or stealth.
+
+\subsubsection{Elf Infection}
+The learning goals are:
+\begin{itemize}
+\item understand elf format
+\item develop the security mindset
+\item distinguish between normal and suspicious behavior.
+\item use nmap to find hosts and open ports on a network.
+\end{itemize}
+Concepts from CS 2013 addressed by this module:
+\begin{itemize}
+\item  risk, threats, vulnerabilities, and attack vectors.  This exercise shows how how an attacker
+  could maintain control of a system or exfiltrate data through infected binary files.
+\item How does this also address trust?
+\end{itemize}
+
+\subsubsection{strace}
+The learning goals are:
+\begin{itemize}
+\item understand how to sort through complex data
+\item develop the security mindset
+\item distinguish between normal and suspicious behavior.
+\item use strace to characterize aspects of program behavior.
+\end{itemize}
+
+
+\subsubsection{scapy hunt}
+The learning goals are:
+\begin{itemize}
+\item understand firewall rules
+\item develop the security mindset
+\item understand routing tables
+\item understand how IP works
+\end{itemize}
+
+\subsubsection{}
+The learning goals are:
+\begin{itemize}
+\item understand firewall rules
+\item develop the security mindset
+\item understand routing tables
+\item understand how IP works
+\end{itemize}
+
+   a section on current Modules and their structure; this
+   foreshadows the Assessment Plan. Modules include: Recon,
+   ELFInfection, strace, scapyhunt, calculator grammar fuzzing,
+
+   Description of exericse. analysis skills nurtured, cs 2013 curriculum topic.
+   
+   List of analysis skills.
+
+   Modules are also an opportunistic mechanism: they provide a
+   jumping-off point for discussing a variety of topics mapped to
+   a -- exercise motivates each topic discussion or lesson.

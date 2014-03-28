@@ -1,0 +1,61 @@
+\documentclass[11pt]{report}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{graphics}
+\usepackage{graphicx}
+
+\newcommand{\eat}[1]{}
+\renewcommand{\thesection}{\Alph{section}}
+
+%from http://devdaily.com/blog/post/latex/control-line-spacing-in-itemize-enumerate-tags/
+\newenvironment{packenum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
+\makeatletter
+    \def\thebibliography#1{\chapter*{References Cited\@mkboth
+      {REFERENCES CITED}{REFERENCES CITED}}\list
+      {[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+        \advance\leftmargin\labelsep
+        \usecounter{enumi}}
+      \def\newblock{\hskip .11em plus .33em minus .07em}
+      \sloppy\clubpenalty4000\widowpenalty4000
+      \sfcode`\.=1000\relax}
+    \makeatother
+
+\newcommand{\comment}[1]{}
+
+\begin{document}
+\comment{
+reviewers
+Blair, Elizabeth, Vinny, Ron Dodge, Conti, 
+
+letters: Jon Hepner, Justin, Lyn, Lois
+}
+
+
+
+%TODO: include related.tex and datamanage.tex
+
+\input{intro} %problem outline, motivation, goals, etc.
+%\input{prior} %summary of our previous efforts and support
+%\input{design} %current design and reporting functionality, how it works
+%\input{develop} %Tasks: what we plan to do with NSF's money
+%\input{hackerBib} %
+%\input{eval} %experiments and assessment, how to show positive results
+%\input{management} %timeline, management plan
+%\input{assessment-summary} %summary of Erik's qualifications and activities
+
+\newpage
+\setcounter{page}{1}
+
+\bibliographystyle{plain}
+\bibliography{livefire}
+
+\end{document}
