@@ -31,8 +31,8 @@ because of the tight
 constraints of the Computer Science curriculum, most schools 
 do not have the luxury of offering a separate class in cybersecurity.  Thus, 
 the first step is to integrate it into other classes both at the upper and lower divisionial
-levels.
-
+levels.  It was also reported at the panel .. at SIGCSE 2014 that only one Ph.D. in Computer
+Security in 2012 joined the ranks of faculty who teach.
 
 % What problem are we solving?
  Professors and instructors face a significant number of
@@ -42,11 +42,11 @@ a variety of curricular resources exist, most of them focus on very specific
 toolsets or traditional, well-understood types of vulnerabilities and
 exploits.  Among the few ``interactive'' scenarios that do exist, documentation
  often  does not adequately explain the
-security implications of the scenarios that students participate in.  Faculty
+security implications of the scenarios that students participate in.  Even faculty
+with some experience in systems administration would need to 
 spend a significant amount of time configuring the exercise, and it is 
 generally not flexible enough to be adapted to their needs or wishes.
-Students are typically rewarded for following a formulaic trail: a sequence
-of commonly used tools.  
+
 
 For students, the process of analyzing the security
 properties of computer systems presents a variety of difficulties.
@@ -55,6 +55,10 @@ thereby understand how they can't be trusted, requires a level
 of engagement that most typical computer science (CS) undergraduate assignments lack and
 most typical information security courses do not have time for.  **should we say something
 here about trust and trustworthiness, which is in CS2013? **
+Students are typically rewarded for following a formulaic trail: a sequence
+of commonly used tools.  In addition, assessing students' analysis skills is  difficult 
+problem.
+
 
 The EDURange framework for cybersecurity exercises has been successfully demonstrated 
 in several venues: security classes at two liberal arts colleges, a graduate-level security class, and
@@ -67,39 +71,60 @@ workshops anywhere without having to worry about installing special software.  T
 the participants only need an ssh client, e.g. PuTTY on Windows.  However, the current 
 model for distributing
 it to other faculty requires that they create an Amazon account and potentially require their students
-to also sign up for accounts.  We propose to lower the barrier for entry with an umbrella account in 
-which we could enroll faculty and their classes, so that we could distribute it more easily.  In addition,
-we propose to provide a ``help desk'' which could guide faculty through any difficulties in setting up 
-exercises and using the AWS interface.
+to also sign up for accounts.  We propose lowering the barrier for entry in three ways:
 
-In addition, we see that there will be a need to help faculty initially set up exercises 
-for their classes.  We
-would like to have a team of undergraduates who would staff an online help desk
+First, by creating an umbrella account in 
+which we could enroll faculty and their classes.  This facilitates distribution and providing direct 
+technical support.  
+
+Second,
+we propose to provide a ``help desk'' which could guide faculty through any difficulties in setting up 
+exercises and using the AWS interface.  From one of our recent workshops, we saw that 
+some faculty felt that they needed more than a three-hour workshop to prepare them for using this
+environment.  We may need to help faculty initially set up exercises 
+for their classes.  Our solution to this problem is  to have a team of undergraduates who would staff 
+an online help desk
 and answer questions about how to run scripts and modify existing exercises or use them as 
 templates for new exercises.
 
 Third, we will run an online course for faculty using EDURange to teach an introductory cybersecurity
 course.  We have already talked with other faculty who teach cybersecurity, and they are interested in 
-working with us to deliver this online course.  Instructors who sign up for this course would learn
+working with us to share their syllabus and help deliver this online course.  
+Instructors who sign up for this course would learn
 to use EDURange to create curriculum for their classes, which would range from a structured introductory
 security class to including some 
 security in other classes, e.g. Networking, OS, Database systems, Programming Languages.
 We will provide EDURange for free to the instructors and their students over the next five years.
 
-Fourth, we will develop the EDURange scoring engine that will allow faculty to use EDURange exercises
-to assess student learning.
+%Fourth, we will develop the EDURange scoring engine that will allow faculty to use EDURange exercises
+%to assess student learning.
 
+% does this come before the EDURange stuff above?
+Our vision is that EDURange would provide a vehicle for all Computer Science faculty to address the goals of 
+the IEEE/ACM 2013
+Curricula report by translating the Information Assurance and Security (IAS) core concepts and outcomes into
+concrete examples.  There are three interconnected components of this proposal: further developing the
+EDURange framework to enhance its capabilites for dissemination and assessment, provide support for faculty development
+through webinars, and provide a research opportunity for students to work on developing EDURange and work
+with faculty who are using it in their classrooms.
+The outcomes of this work will be:
 
-\subsection{Outcomes}
 \begin{enumerate}
-\item Disseminating EDURange to 100 faculty, who will use it in their classes.
+\item EDURange will be used in 100 classes over five years at institutions other than the home institutions of
+  the PIs.
 %\item Enhance the EDURange framework to improve its assessment capabilities MEL: may be a distraction for this proposal
-\item Enhance the EDURange implementation to improve the ability to disseminate it.
-\item Create a collection of 10 exercises that would span an introductory security course.
+\item Faculty will be able to assess their students on topics in the CS2013 report using EDURange and 
+  associated materials.
+\item EDURange and associated activites will enhance teaching capabilites and enhance faculty expertise.
+\item EDURange will produce a concrete realization of several of the IAS-related Knowledge Units
+  with respect to cybersecurity concepts, skills and learning outcomes.
 \end{enumerate}
 
-\subsection{The Security Mindset}
 
+
+\subsection{The Security Mindset}
+As security educators, we are motivated by the desire to teach analysis skills and concepts
+to our students.
 Analysis skills are fundamental to the security mindset.  The security
 mindset implies the ability to understand a system both from the
 standpoint of a builder and an attacker.  Thus, the security mindset
@@ -109,3 +134,6 @@ i.e. how can systems fail and be made to fail.  These are things that
 a defender or attacker needs to keep in mind.  Another aspect is
 questioning and verifying assumptions.  This is particularly relevant
 for the defender.
+
+We want to change how security is taught in the classroom, what is taught, improve 
+faculty confidence to teach it, and make CS2013 a living document.
