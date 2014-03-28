@@ -1,28 +1,32 @@
 \section*{EDURange Exercises}
 
 {\bf organization and elements, learning implications}
-With the publication of the CS2013 Curricula and its inclusion of computer security and 
+With the publication of the IEEE/ACM CS2013 Curricula and its inclusion of computer security and 
 information assurance, we are redirecting the exercises in EDURange to address the concepts and learning 
 outcomes described in the IAS Knowledge Area.  ?Since those are still at a high level, we hope to contribute
-to the implementation of the standards by providing concrete examples of those standards.
-
- Targeted audience is 2-fold: (1) ``just want an exercise''/inexperienced
+to the implementation of the standards by providing concrete examples of those standards.  We recognize that
+there are two groups of faculty who are our targeted audience: (1) ``just want an exercise''/inexperienced
  (2) experienced...want configuration, etc.
 
 %   First discuss EDURange infrastructure
 \subsection{EDURange infrastructure}
 EDURange allows instructors and designers to specify exercises at multiple levels of detail.
-Using yaml as an intermediate representation, one can specify the structure of an exercise.
-There are six types of entities that we have identified as important:
+Using YAML as an intermediate representation, one can specify the structure of an exercise.
+This intermediate representation is compiled into API calls to AWS to create virtual machines and
+Chef scripts to install software.  At the highest level, the description of our cybersecurity exercises
+is comprised of six types of entities:
 \begin{itemize}
-  \item Nodes, e.g. could be a VM, attributes of the node would include players
+  \item Nodes, e.g.  a VM, attributes of the node could include players with accounts on that node
   \item Networks,  collections of nodes and the connections among them
   \item Software, which is necessary for the correct functioning of the exercise, including versions
   \item Constraints, e.g. time limits, 
-  \item Goals, i.e. learning objectives
-  \item Artifact, e.g. a file that is placed on a target
+  \item Goals, i.e. learning objectives.  These are specified at a low level, such as 
+    reading or creating an artifact, reporting an IP address or password.
+  \item Artifact, e.g. a file that is placed on a target and could be used as evidence of achieving a goal
 \end{itemize}
-Actually, the yaml file is different: groups, users, roles (an attribute), packages (Chef scripts for software)
+
+The next lower level of description is in terms of a YAML file which continas:
+ groups, users, roles (an attribute), packages (Chef scripts for software)
 
 
 \subsection{Existing Exercises}
@@ -40,11 +44,13 @@ Concepts from CS 2013 addressed by this module:
 \begin{itemize}
 \item  risk, threats, vulnerabilities, and attack vectors.  This exercise shows how one might 
   find vulnerabilities
+\item network security
 \end{itemize}
 
 
-This exercise is relevant for both defensive and offensive roles.  
-[it currently has one level, show network diagram]
+This exercise is relevant for both defensive and offensive roles.  It currently has one level of difficulty,
+and we have used it in several workshops.
+[show network diagram]
 There are a dozen hosts on a remote network, and the student tries to find all of them as quickly as 
 possible, and discover what what ports are open and what services are running.  At the knowledge level,
 the student is learning to use nmap and what options it uses.  At a higher level, the student is learning
@@ -61,17 +67,21 @@ The learning goals are:
 \begin{itemize}
 \item understand elf format
 \item develop the security mindset
-\item distinguish between normal and suspicious behavior.
+\item distinguish between normal and suspicious behavior for standard utilites and programs.
 \item use nmap to find hosts and open ports on a network.
 \end{itemize}
 Concepts from CS 2013 addressed by this module:
 \begin{itemize}
 \item  risk, threats, vulnerabilities, and attack vectors.  This exercise shows how how an attacker
   could maintain control of a system or exfiltrate data through infected binary files.
+\item network security.  The infected software will open a port and send packets to a remote server.
 \item How does this also address trust?
 \end{itemize}
 
 \subsubsection{strace}
+Students are given a trace of system calls made while a few programs were running simultaneously.
+The trace has been cleaned up to remove the names of the executable files.
+
 The learning goals are:
 \begin{itemize}
 \item understand how to sort through complex data
@@ -79,9 +89,19 @@ The learning goals are:
 \item distinguish between normal and suspicious behavior.
 \item use strace to characterize aspects of program behavior.
 \end{itemize}
+Concepts from CS 2013 addressed by this module:
+\begin{itemize}
+\item  risk, threats, vulnerabilities, and attack vectors.  
+
+\item How does this also address trust?
+\end{itemize}
 
 
 \subsubsection{scapy hunt}
+In this exercise, students craft network packets to detect hosts that are not visible directly on
+the local network.  Describe listening for packets and replaying them with modifications, overflowing
+the forwarding table, port knocking.
+
 The learning goals are:
 \begin{itemize}
 \item understand firewall rules
@@ -90,7 +110,12 @@ The learning goals are:
 \item understand how IP works
 \end{itemize}
 
+
 \subsubsection{Grammar Fuzzing}
+This is an attack/defend exercise, where students must implement a recognizer for a grammar,
+e.g. a grammar describing the input to a calculator.  The attacker can look at the code and
+must design input that either creates false postives or false negatives.
+
 The learning goals are:
 \begin{itemize}
 \item perform input sanitization
@@ -98,12 +123,11 @@ The learning goals are:
 \item understand langsec
 \end{itemize}
 
-\subsection{New exercises}
-
-
 \subsection{Addressing CS2013}
-Here are the concepts and learning goals from CS2013 that we will address:
+Here are the concepts and learning outcomes from CS2013 that we will address:
 
+
+Here are additional exercises that will address those goals:
 
 
 \comment{   a section on current Modules and their structure; this
