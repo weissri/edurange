@@ -1,7 +1,164 @@
-\section*{Related Work In Cybersecurity Education}
+\subsection{Related Work}
+\label{ssec:related}
+\comment{
+Hinted at these problems in the intro, but give a more fulsome description of each, plus the specific difference
+/ advantage of edurange. Best way to do this is emphasize different focus and outcomes? “We’re not seeking
+to replace, but to build/augment capacity along another direction.”
+}
+1. Hands-on exercises.
 
-Hinted at these problems in the intro, but give a more fulsome
-description of each, plus the specific difference / advantage of
-edurange. Best way to do this is emphasize different focus and
-outcomes? ``We're not seeking to replace, but to build/augment
-capacity along another direction.''
+There are a number of hands-on exercises that are available 
+Tennessee Tech University
+UW Tacoma Yan Bai, VMs on flash drives 
+ASIDE (Bill Chu)
+
+2. Frameworks for Security Labs \\
+DETER, werewolves, RAVE
+These environments are fine, except that with RAVE, new scenarios and VMs need to be installed by
+the developers.  A faculty member can work with the developers to create new configurations an exercises,
+they can't just upload some VMs and try them out.
+
+Currently there are a few frameowrks for 
+
+EDURange provides a unique infrastructure that enables students to
+interactively develop their information security analysis skills.
+Information security education has been a popular, well-studied topic.
+Preparing a large cybersecurity workforce seems to be a national
+priority, but emerging viewpoints~\cite{cooper2009sigcse} seem to
+suggest that most efforts to date have not been as effective as
+government and industry seems to need~\cite{locasto2011cacm}.
+GovTech.com suggests that there is a ``lack of faculty at the
+university level who can teach cyber-security beyond its ``soft side''
+including policy and
+analysis.''\footnote{\url{http://www.govtech.com/security/Cyber-Challenge-Work-Force-041811.html}}
+
+We believe that we have identified an interesting and previously
+underexplored approach to enabling students to understand and apply
+principles and patterns (particularly dealing with the composition of
+trust) rather than learn only toolsets or stale, ten-year old attacks
+and exploits.
+
+\subsection{Comparison of EDURange with Existing Projects}
+
+As we detail in Table~\ref{table:compare}, EDURange provides several
+unique and distinct experiences from existing cybersecurity labs,
+exercises, and curricula.  The PacketWars project is probably the
+closest existing piece of work to what EDURange proposes, and there
+has been some work on providing students with access to ``live''
+exercises on a small scale~\cite{vigna}.
+
+\begin{table*}[ht]
+\caption{{\em A Summary Comparison of EDURange and Existing Projects.} 
+EDURange focuses on developing analytical skills and understanding system and network failure modes. The table below is not a criticism of existing efforts, but meant to highlight the ways in which our plans for EDURange differ from the characteristics of existing projects -- these projects may have been built with different criteria in mind.}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|c|c|}
+\hline
+ {\bf Project} & {\bf Analysis} & 
+                 {\bf Competition} &
+                 {\bf Configurable} & 
+                 {\bf Scalable} & 
+                 {\bf Documentation} &
+                 {\bf Coverage}\\
+\hline
+ EDURange &  %\checkmark & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark
+\\
+\hline
+ Cybersiege & \\
+\hline
+ SEED & \\
+\hline
+ Security Injections & \\
+\hline
+ CCDC & \\
+\hline
+ PacketWars & \\
+\hline
+ITSEED & \\
+\hline
+ Google Gruyere & \\
+\hline
+Tennessee &\\
+\hline
+\end{tabular}
+\end{center}
+\label{table:compare}
+\end{table*}
+
+
+    \begin{table*}[ht]
+    \caption{{\em A Summary Comparison of EDURange and Existing Projects.}
+      EDURange focuses on developing analytical skills and understanding
+      system and network failure modes. The table below is not a criticism
+      of existing efforts, but meant to highlight the ways in which our
+      plans for EDURange differ from the characteristics of existing
+      projects -- these projects may have been built with different
+      criteria in mind.}
+    \begin{center}
+    \begin{tabular}{|l||c|c|}
+    \hline
+    {\bf Project} & {\bf Primary Disadvantage} & {\bf Best Feature} \\
+    \hline
+     Cybersiege & shallow analysis
+                & interactive training scenarios\\
+    \hline
+     SEED & lacks competitive interaction
+          & comprehensive documentation\\
+    \hline
+     Security Injections & focus on defensive coding patterns
+                         & introduction to basic security\\
+    \hline
+     CCDC & requires travel; limited remote access
+          & interactive and competitive\\
+    \hline
+     PacketWars & requires travel; limited availability
+                & contains well-structured scenarios\\
+    \hline
+     DV Linux & minimal instructor support
+              & ready-to-go flawed environment\\
+    \hline
+     Google Gruyere & narrow focus (web apps)
+                    & cloud-based; well-documented\\
+    \hline
+    \end{tabular}
+    \end{center}
+    \label{table:compare}
+    \end{table*}
+
+
+
+Some of the projects listed in Table~\ref{table:compare} seem to have
+different educational goals in mind.  For example, while Cybersiege
+from Naval Postgraduate School provides a video-game-like, interactive
+environment, the decisions asked of a participate are mainly
+requisition and provisioning decisions rather than problems requiring
+technical analysis skills; this difference speaks to a different
+training goal.  Google's Gruyere is a great example of an interactive,
+well-documented, scalable cybersecurity exercise, but it only covers
+the space of web application vulnerabilities.  Towson's ``Security
+Injections'' mainly focus on several important security programming
+patterns.  While the SEED material from Syracuse presents a mature,
+well-documented set of exercises, they are not typically interactive
+or dynamic.  Competitions like CCDC seem to be structured in such a
+way as to require travel to the competition; EDURange envisions a
+publicly-accessible platform where even remote parties can interact.
+
+\subsection{Information Security Education}
+
+Our philosphy on information security education is based on our work
+on understanding and teaching the hacker
+curriculum~\cite{bratus2007hacklearn} to students.  This approach is
+predicated on the utility of failure modes --- rather than teaching
+students the ``success'' cases, we attempt to deliver a culture shock
+that makes them disrespect API boundaries and adopt a cross-layer view
+of the CS discipline~\cite{bratus2010sigcse}.  We routinely encourage
+our students to adopt a dual frame of mind when solving
+problems~\cite{locasto2009own} to prevent artificial abstraction
+layers from becoming boundaries of competence~\cite{white1996csedsec}.
+
+%http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0817267
+
+
+
+
+
+
