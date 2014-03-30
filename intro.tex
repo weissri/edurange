@@ -8,7 +8,7 @@
 %\begin{document}
 
 
-\section{Helping Students Acquire Security Analysis Skills}
+\section{Introduction: Helping Faculty Teach Analysis Skills}
 \label{sec:intro}
 
 % the general problem
@@ -46,15 +46,20 @@ security implications of the scenarios that students participate in.  Even facul
 with some experience in systems administration would need to 
 spend a significant amount of time configuring the exercise, and it is 
 generally not flexible enough to be adapted to their needs or wishes.
-
+In addition, we plan to offer a webinar for faculty on teaching an introductory 
+Computer Security class.
+\eat{
+In the report {\it Toward Curricular Guidelines for Cybersecurity} \cite{ACM_cyber_2013},
+the first recommendation for the NSF is to provide MOOCS to assist teaching of the 
+fundamentals as prescribed by the CS2013 exemplars.  This proposal describes a webinar 
+that we plan to hold  which we believe would have similar goals and would be more effective.}
 
 For students, the process of analyzing the security
 properties of computer systems presents a variety of difficulties.
 Acquiring the mindset necessary to analyze and debug systems -- and
 thereby understand how they can't be trusted, requires a level
 of engagement that most typical computer science (CS) undergraduate assignments lack and
-most typical information security courses do not have time for.  **should we say something
-here about trust and trustworthiness, which is in CS2013? **
+most typical information security courses do not have time for.  
 Students are typically rewarded for following a formulaic trail: a sequence
 of commonly used tools.  In addition, assessing students' analysis skills is  difficult 
 problem.
@@ -64,41 +69,44 @@ The {\bf EDURange framework} for cybersecurity exercises has been successfully d
 in several venues: security classes at two liberal arts colleges, a graduate-level security class, and
 two workshops for faculty at major conferences.  There has been strong interest on the part of
 faculty participants in using this platform in their classes.  The design goals are:
-\begin{enumerate}
+\begin{packenum}
 \item engaging for the students
 \item easy to assess by faculty
 \item easy to configure
 \item exciting for the faculty, so that they will be engaged and will recommend them
   to colleagues
-\end{enumerate}
+\end{packenum}
 
 However, one of the potential barriers to distributing EDURange to them is the hosting environment.
 EDURange is currently hosted on
 Amazon's AWS/EC2 virtual cloud environment.  This has made it very easy for the PIs to use it in 
 workshops anywhere without having to worry about installing special software.  There are no plugins;
-the participants only need an ssh client, e.g. PuTTY on Windows.  However, the current 
+the participants only need an ssh client, e.g. PuTTY on Windows.  The current 
 model for distributing
-it to other faculty requires that they create an Amazon account and potentially require their students
+exercises to other faculty requires that they create an Amazon account and potentially require their students
 to also sign up for accounts.  We propose lowering the barrier for entry in three ways:
 
-First, by creating an umbrella account in 
+{\bf First}, by creating an umbrella account in 
 which we could enroll faculty and their classes.  This facilitates distribution of EDURange
 and the abililty to provide direct 
 technical support.  
 
-Second,
+{\bf Second},
 we propose to provide a ``help desk'' which could guide faculty through any difficulties in setting up 
 exercises and using the AWS interface.  From one of our recent workshops, we saw that 
 some faculty felt that they needed more than a three-hour workshop to prepare them for using this
-environment.  We may need to help faculty initially set up exercises 
+environment.  We may need to help faculty who are not familiar with AWS or the EDURange
+framework  to set up exercises 
 for their classes.  Our solution to this problem is  to have a team of undergraduates who would staff 
 an online help desk
-and answer questions about how to run scripts and modify existing exercises or use them as 
+and answer questions about how to launch VM instances, run scripts and modify existing exercises or use them as 
 templates for new exercises.
 
-Third, we will run an online course for faculty using EDURange to teach an introductory cybersecurity
+{\bf Third}, we will run an online course/webinar for faculty using EDURange to teach an introductory cybersecurity
 course.  We have already talked with other faculty who teach cybersecurity, and they are interested in 
-working with us to share their syllabus and help deliver this online course.  
+working with us to share their syllabuses and help deliver this online course.  We have talked with 
+Corrinne Sande, a PI for Cyber Watch West, and we would be able to offer this webinar through their 
+facilities.
 Instructors who sign up for this course would learn
 to use EDURange to enhance their curriculum and create new curriculum for their classes, which could range from 
 a standard introductory
@@ -110,15 +118,15 @@ We will provide EDURange for free to the instructors and their students over the
 %to assess student learning.
 
 % does this come before the EDURange stuff above?
-Our vision is that EDURange would provide a vehicle for all Computer Science faculty to address the goals of 
-the IEEE/ACM 2013
-Curricula report by translating the Information Assurance and Security (IAS) core concepts and outcomes into
+Our vision is that EDURange would provide a vehicle for all Computer Science faculty to {\em address the goals of 
+the IEEE/ACM CS2013
+Curricula} report by translating the Information Assurance and Security (IAS) core concepts and outcomes into
 concrete examples.  There are three interconnected components of this proposal: further developing the
 EDURange framework to enhance its capabilites for dissemination and assessment, provide support for faculty development
 through webinars, and provide a research opportunity for students to work on developing EDURange and work
 with faculty who are using it in their classrooms.
+\paragraph{Outcomes}
 The outcomes of this work will be:
-
 \begin{enumerate}
 \item EDURange will be used in 100 classes over five years at institutions other than the home institutions of
   the PIs.
@@ -132,7 +140,7 @@ The outcomes of this work will be:
 
 
 
-\subsection{The Security Mindset}
+\subsection{Analysis and the Security Mindset}
 As security educators, we are motivated by the desire to teach analysis skills and concepts
 to our students.
 Analysis skills are fundamental to the security mindset.  The security
@@ -146,12 +154,12 @@ questioning and verifying assumptions.  This is particularly relevant
 for the defender.
 
 We want to change how security is taught in the classroom, what is taught, improve 
-faculty confidence to teach it, and make CS2013 a living document.  We want our stuedents to 
+faculty confidence to teach it, and make CS2013 a living document.  We want our students to 
 have the opportunity to go beyond 
-'Familiarity' to 'Usage'
+'Familiarity' to 'Usage', to be able to apply the concepts in realistic situations.
 
 
-from CS2013: ``The goal of this course is to introduce students to the challenges, approaches, and techniques 
+\noindent from a CS2013 exemplar: ``The goal of this course is to introduce students to the challenges, approaches, and techniques 
 for implementing, deploying, and maintaining secure computing systems and networks. The rationale behind this 
 course is to meet the
 need for information assurance content within the CS curriculum at the same time as tailoring to the diversity of

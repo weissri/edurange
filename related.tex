@@ -1,16 +1,44 @@
-\subsection{Related Work}
+\subsection*{Related Work}
 \label{ssec:related}
 \comment{
 Hinted at these problems in the intro, but give a more fulsome description of each, plus the specific difference
 / advantage of edurange. Best way to do this is emphasize different focus and outcomes? “We’re not seeking
 to replace, but to build/augment capacity along another direction.”
 }
-1. Hands-on exercises.
 
-There are a number of hands-on exercises that are available 
+EDURange provides a unique infrastructure that enables faculty to develop exercises for students, in which they
+interactively develop their information security analysis skills.
+Information security education has been a popular, well-studied topic.
+Preparing a large cybersecurity workforce seems to be a national
+priority, but emerging viewpoints~\cite{cooper2009sigcse} seem to
+suggest that most efforts to date have not been as effective as
+government and industry seems to need~\cite{locasto2011cacm}. ** is this still true? **
+GovTech.com suggests that there is a ``lack of faculty at the
+university level who can teach cyber-security beyond its ``soft side''
+including policy and
+analysis.''\footnote{\url{http://www.govtech.com/security/Cyber-Challenge-Work-Force-041811.html}}
+
+
+We believe that we have identified an interesting and previously
+underexplored approach to enabling students to understand and apply
+principles and patterns (particularly dealing with the composition of
+trust).  The challenge that we are facing is how to make it more broadly available to
+faculty and their students.
+
+\eat{rather than learn only toolsets or stale, ten-year old attacks
+and exploits.}
+
+Judging from the Birds of a Feather sessions on Security at the last two years of SIGCSE, there
+has been a modest increase in the number of hands-on cybersecurity exercises, not all of which
+address the security mindset.  It is also clear from the workshops we have attended that faculty 
+want to use them but are frustrated because of the difficulty in disseminating and setting them up.
+The other frameworks that we have tried have some good features that we can emulate and some limitations
+that we try to avoid
+
+\eat{There are a number of hands-on exercises that are available 
 Tennessee Tech University
 UW Tacoma Yan Bai, VMs on flash drives 
-ASIDE (Bill Chu)
+ASIDE (Bill Chu)}
 
 2. Frameworks for Security Labs \\
 DETER, werewolves, RAVE
@@ -18,25 +46,7 @@ These environments are fine, except that with RAVE, new scenarios and VMs need t
 the developers.  A faculty member can work with the developers to create new configurations an exercises,
 they can't just upload some VMs and try them out.
 
-Currently there are a few frameowrks for 
-
-EDURange provides a unique infrastructure that enables students to
-interactively develop their information security analysis skills.
-Information security education has been a popular, well-studied topic.
-Preparing a large cybersecurity workforce seems to be a national
-priority, but emerging viewpoints~\cite{cooper2009sigcse} seem to
-suggest that most efforts to date have not been as effective as
-government and industry seems to need~\cite{locasto2011cacm}.
-GovTech.com suggests that there is a ``lack of faculty at the
-university level who can teach cyber-security beyond its ``soft side''
-including policy and
-analysis.''\footnote{\url{http://www.govtech.com/security/Cyber-Challenge-Work-Force-041811.html}}
-
-We believe that we have identified an interesting and previously
-underexplored approach to enabling students to understand and apply
-principles and patterns (particularly dealing with the composition of
-trust) rather than learn only toolsets or stale, ten-year old attacks
-and exploits.
+Currently there are a few frameworks for 
 
 \subsection{Comparison of EDURange with Existing Projects}
 
@@ -46,7 +56,7 @@ exercises, and curricula.  The PacketWars project is probably the
 closest existing piece of work to what EDURange proposes, and there
 has been some work on providing students with access to ``live''
 exercises on a small scale~\cite{vigna}.
-
+\comment{
 \begin{table*}[ht]
 \caption{{\em A Summary Comparison of EDURange and Existing Projects.} 
 EDURange focuses on developing analytical skills and understanding system and network failure modes. The table below is not a criticism of existing efforts, but meant to highlight the ways in which our plans for EDURange differ from the characteristics of existing projects -- these projects may have been built with different criteria in mind.}
@@ -83,17 +93,17 @@ Tennessee &\\
 \end{center}
 \label{table:compare}
 \end{table*}
+}
 
-
-    \begin{table*}[ht]
-    \caption{{\em A Summary Comparison of EDURange and Existing Projects.}
+\begin{table*}[ht]
+  \caption{{\em A Summary Comparison of EDURange and Existing Projects.}
       EDURange focuses on developing analytical skills and understanding
       system and network failure modes. The table below is not a criticism
       of existing efforts, but meant to highlight the ways in which our
       plans for EDURange differ from the characteristics of existing
       projects -- these projects may have been built with different
       criteria in mind.}
-    \begin{center}
+  \begin{center}
     \begin{tabular}{|l||c|c|}
     \hline
     {\bf Project} & {\bf Primary Disadvantage} & {\bf Best Feature} \\
@@ -113,16 +123,16 @@ Tennessee &\\
      PacketWars & requires travel; limited availability
                 & contains well-structured scenarios\\
     \hline
-     DV Linux & minimal instructor support
-              & ready-to-go flawed environment\\
+    ITSEED & minimal instructor support, distrib by flash drive
+              & good documentation for students\\
     \hline
      Google Gruyere & narrow focus (web apps)
                     & cloud-based; well-documented\\
     \hline
     \end{tabular}
-    \end{center}
-    \label{table:compare}
-    \end{table*}
+  \end{center}
+  \label{table:compare}
+\end{table*}
 
 
 
