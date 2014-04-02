@@ -3,6 +3,15 @@
 \usepackage{fullpage}
 \usepackage{url}
 
+\newcommand{\eat}[1]{}
+
+\newenvironment{packenum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+
 \begin{document}
 
 \begin{center} 
@@ -94,6 +103,7 @@ reverse-engineering.
 %suffer from poor documentation (or lack such documentation
 %altogether).
 
+\noindent {\bf Intellectual Merit:}
 The intellectural merit of this proposal stems from two efforts.
 First, EDURange exercises will address the learning outcomes of CS 2013
 and reward students for understanding and
@@ -126,7 +136,7 @@ be used as an evaluation and assessment tool for both students in the
 course of their studies as well as an independent benchmark for other
 cybersecurity training programs, curricula, and exercises.
 
-%\noindent {\bf Broader Impact:} 
+\noindent {\bf Broader Impact:} 
 This proposal seeks to develop and
 deploy EDURange as an open-access/open source security scenario environment.
 Several planned outcomes support the ability of this proposal to have
