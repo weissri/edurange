@@ -1,75 +1,332 @@
 \section*{Activities}
+\label{sec:activities}
 
-main purpose of activities is to support faculty development; they need to incorporate security development into a wide range of courses,
-and therefore they need more context. All activities are aimed at supporting this goal (and these outcomes).
+The work contemplated in this proposal includes three major
+activities: $(1)$ extending and enhancing the set of EDURange
+scenarios (e.g., with appropriate documentation and pedagogical
+advice), $(2)$ supporting faculty in their transition to using the
+EDURange framework, and $(3)$ designing and running an open webinar to
+disseminate a template outline for an introductory security course
+(this template also serves as a default setting for applying
+EDURange--based exercises).
 
-We will bring together a wide range of experts who teach this stuff on a regular basis (plus their students) and we will put together
-exercises that are specifically mapped to CS 2013 and specific implimentations of their security curriculum...catar a la carte menu to
-fauclty that don't have that experience.
+Each activity and its supporting tasks are organized around the
+efforts of a specific group of personnel (students, instructors,
+PIs/researchers).  This section of the proposal describes the primary
+research and training events.  Activities related to assessment are
+described in Section~\ref{sec:eval}.
 
-{\bf Ongoing Activities}
+\subsection{Main Goal}
 
-Monitoring and maintanece of EDURange cloud infrastructure as hosted
-by Amazon. Support for mailing list and community building activities
-(twitter, etc.?)
+We stress that the main purpose of these activities is to support
+instructor development; many faculty are in a position of needing to
+develop and incorporate cybersecurity curriculum and exercises into a
+wide range of courses -- often on relatively short notice.  The
+audience for EDURange includes a wide variety of faculty members and
+instructors with varying experience and opportunities for training
+themselves in cybersecurity.  We have actively engaged with this
+audience in a variety of workshops and meetings over the past five
+years, and despite the variety in their backgrounds, they have
+expressed a common need: the need for more context and expert support
+in bringing cybersecurity material to their classrooms, tutorials, and
+lab exercises.  In short, they express a need for help in
+transitioning the wealth of available material to their specific
+environment and translating this material into a suitable experience
+for their students.  
 
-Ongoing support for EDURange infrastructure; possibly matched by Amazon
+This need is difficult to address during face-to-face workshops and
+Birds-of-a-Feather sessions, and it is even harder to address when
+faculty are faced with assimilating a large amount of available
+cybersecurity training material unaided and unguided.  Faculty are
+creative and talented, but they are in need of more context, timely
+information, and relevant advice.  The activities in this proposal are
+focused precisely on helping faculty achieve this goal and take the
+final few but daunting steps between {\em knowing about} cybersecurity
+exercises and {\em actually using} such exercises in their classrooms.
 
+There is a gap between the potential value of cybersecurity exercises
+and the actual benefit to students in practice.  Closing this gap and
+achieving our goal through the activities outlined below can have a
+direct impact on the quality of student learning, but our main focus
+is on supporting and preparing faculty to design and deliver their own
+student assessment activities (primarily via EDURange), not in
+directly measuring student improvement.
 
-Student-based activities
- * help desk: direct support our faculty audience/clients; opportunity for professional development: super TA/student aide
+%structure of each activity: who, what, why (when is in management plan) personnel, effort
 
- purpose is to twofold: close that last small gap in access (give faculty member comfort and confidence)
+\subsection{Activity I: Enhancing EDURange}
 
-How do we control access? Faculty needs to commit themselves and students to participating in our assessment (see Section 5) then
-on FCFS basis, we will offer a student 1, 2, or 3 times? We don't have capacity to help everybody in face-to-face premium mode, they
-can get the mailing list asychronous support.
+Our first major activity seeks to enhance the capabilities of EDURange
+and sustain access to the infrastructure by removing barriers to
+adoption, including the barrier of initial cost to faculty as they
+first adopt it in their courses.  These efforts entail monitoring and
+maintenance of the EDURange cloud infrastructure and various community
+support mechanisms (mailing lists, help resources, etc.).  This
+activity includes two significant sub-tasks.
 
-Platinum EDURange partners.
+\subsubsection{Sustainable Access to EDURange Cloud Infrastructure}
 
-``1 out of 64 students went into teaching'': gives student opportunity to develop teaching/education technique...apprentice model, exposure
-to a variety of professors and classroom environments...we don't teach grad students how to teach...this is an opportunity for practical
-training and course and curriculum management, development, experiential learning for our student...valuable experience for undergrads, also
-a variety of experience...they are not just pounding out code.. they act as a valuable external resource/expert to the faculty member they are
-helping.
+One major barrier to access that confronts faculty members is one of
+limited resources.  EDURange is designed to eliminate as much of that
+barrier as is practical, but running in the cloud still requires some
+forms of delegation and management, particularly in accounting for
+time and elastic resources allocated to each exercise scenario.  Part
+of this proposal seeks support to sustain EDURange as a resource {\em
+  while instructors become acquainted with EDURange and transition to
+  their own educational Amazon grants}.  We have deliberately defined
+an ``exit protocol'' to bolster a realistic sustainability plan.
+EDURange is not meant to bear all the associated costs of a cloud
+platform for all users in perpetuity.
 
- * module development, multiple benefits to student researchers: pratical hands-on experience in systems and cloud and security, plus
-   develop an appreciation for cybersecurity curriculum development as experssed in CS 2013.
+\noindent {\bf Exit Protocol} \hskip 0.1in We seek to support
+instructors in a way that eventually makes them independent, including
+the ability to run EDURange scenarios from within their own Amazon
+account or as funded by their own departments or institutions.  Our
+plan stresses a significant amount of support early on and allows
+instructors to become comfortable with using our EDURange scenarios as
+delegated users within our Amazon account.  As instructors gain
+comfort and familiarity with the technical details of the scenarios,
+we will work with the instructor to transition them to an independent
+Amazon account.
 
-Faculty-based activities 
+The driving factor behind this plan is a consideration of
+sustainability: there is an obvious need to enable faculty and
+instructors to operate scenarios on their own because no ``free''
+service can support all users for an indefinite period of time.  Our
+intent is that by the end of the period of the grant, we will have
+created a community of independent EDURange users with a shared
+experience and resources (our website, documentation, scenarios, etc.)
+to help train others in the larger CS education community and new
+faculty at their own institutions.  We see this as a great example of
+sustainable capacity building because it is based primarily on
+enabling instructors to look after themselves rather than creating a
+perpetual dependency on the EDURange personnel.
 
- * design and run webinar (plan out curriculum) act as resource faculty
-   audience; offering skeleton of an intro infosec course; cadre of instructors (panel of experts) will be given stipends to
-   support their involvement
-    * piazza
-    * G+ youtube
+\subsubsection{Module Development}
 
- * money for workshops at SIGCSE where we demo EDURange for attendees --- this is place to get feedback; this activity
-   feeds into our assessment and development (they give us ideas, VMs, exercises). Contact/face time target audience.
+The second significant enhancement to EDURange concentrates on the
+development and porting of cybersecurity scenarios to EDURange.  This
+is primarily a student--driven activity.  
 
- * guide students and help design scenarios; major elements, maps
- elements to CS2013, and we will offer documentation (we are the best
- people to write this b/c we are faculty members...include notes for
- faculty on the scenario motivation, formative and summative
- assessments, description of how it maps to CS 2013, how to best use
- it, keywords/topics, learning objectives, provides default context
- and possible suggestions for integration into non-security courses.
+This activity accrues two benefits.  First, it augments the set of
+scenarios available to users of EDURange.  Specifically, we will look
+to port some existing cybersecurity exercises to EDURange.  The second
+benefit is in providing our students not only the opportunity to get
+practical hands-on experience in Computer Science topics like systems,
+networking, cloud, and security, but also the opportunity to develop
+an appreciation for cybersecurity curriculum development.  This theme
+of benefit accruing to our students is a central consideration in the
+activities described in this section. We seek ways to enhance their
+educational experience that are not solely limited to software
+development or programming.
 
-development of new scenarios and exercises.
- - take other people's exercises, make accesible
- - create new exercises of the EDURange style
+\subsection{Activity II: Direct Faculty Support}
 
-{Are we going to create student assessments?  We will do that for a small number
-of exercises that we create.  Our goal is to create the framework for creating assessments.
- we will not be the only ones creating exercises in EDURange }
+Our second major activity seeks to build our own capacity to offer
+faculty significant and meaningful support, advice, and documentation
+through mechanisms like peer instruction, debriefings, and guided
+setup and semi-supervised delivery of EDURange scenarios. This
+activity includes two significant sub-tasks.  The first is a
+student--centric activity, and the second is a PI-centric activity.
 
+\subsubsection{Semi-supervised Delivery (an EDURange ``Help Desk'')}
 
+As mentioned above, faculty can be talented and motivated to learn
+about cybersecurity and design courses and curriculum, but even those
+with significant amounts of enthusiasm and awareness of cybersecurity
+training resources prefer to have access to an informed ``second
+opinion'', {\em especially} when seeking to incorporate live exercises
+or demos from external organizations or other instructors.  To help
+close that last small gap in access and give faculty members comfort
+and confidence in deploying and using EDURange as an instructional
+tool, we plan to develop a student--led ``help desk'' for EDURange.
 
-the webinar; the course template outline...make the point that
-   the course is an example educational environment where EDURange can
-   be mapped to or used.
+This group of students, advised and supervised by the PIs, will be
+available to provide live support to faculty who are using EDURange
+scenarios for the first few times.  In essence, they will provide
+instructors with semi-supervised delivery of lessons, tutorials, or
+labs based on EDURange.  We know both that this model is possible and
+practical because we have done it ourselves several times over the
+past two years. We have prototyped this sort of interaction and are
+ready to expand it.
 
-a section on the EDURange ``help desk'' (another core expense item)
+\noindent {\bf Benefit to our students}: This direct support of our
+faculty audience has several benefits, including the ability to more
+closely and realistically assess how faculty are using EDURange and
+any difficulties or benefits they perceive.  This kind of close
+coordination thus has benefits to the project in terms of assessment
+quality.  However, this kind of activity tremendously benefits our
+students because it gives them the opportunity to practice and develop
+their own teaching techniques. It gives them an exposure to a variety
+of professors and classroom environments.  They act as a valuable
+external resource and an expert peer to an instructor -- an experience
+few undergraduate students ever have.  This form of experiential
+learning should boost their own skill and confidence.
 
+%MEL: I like this, but not sure we should SAY it in the proposal.  How
+%do we control access? Platinum EDURange partners. Faculty needs to
+%commit themselves and students to participating in our assessment
+%(see Section 5) then on FCFS basis, we will offer a student 1, 2, or
+%3 times? We don't have capacity to help everybody in face-to-face
+%premium mode, they can get the mailing list asychronous support.
 
+%``1 out of 64 students went into teaching'': gives student opportunity
+%to develop teaching/education technique...apprentice model, exposure
+%to a variety of professors and classroom environments...we don't teach
+%grad students how to teach...this is an opportunity for practical
+%%training and course and curriculum management, development,
+%experiential learning for our student...valuable experience for
+%undergrads, also a variety of experience...they are not just pounding
+%out code.. they act as a valuable external resource/expert to the
+%faculty member they are helping.
 
+% MEL: Not just RTFM!
+\subsubsection{Documentation}
+
+The second significant task under Activity II is the development of
+specialized documentation for each EDURange scenario.  Writing this
+documentation is a PI--centric task because we are instructors {\em
+  writing for other instructors} about our experience and expectations
+related to curriculum material.  We can share how well each scenario
+worked in the classroom environment and what topics it was useful for
+introducing or assessing.  We can point out the pitfalls inherent in
+some of the topics or technical details of each exercise.
+
+In writing this documentation, we are not proposing to merely write
+simple step-by-step instructions for running each scenario, but also
+address very clearly and concisely a set of other important questions,
+such as: what does scoring mean? What is the best way to use this
+exercise in a particular class? What cybersecurity analysis skills are
+being taught?  What are the knowledge and skill areas that can be
+discussed before or after the scenario? How does this map to the CS
+2013 curriculum?
+
+Furthermore, we will include in each EDURange scenario description
+information about what and how EDURange scores particular goals and
+events within the exercise.  We will provide enough background
+information and description to calculate a basic performance score,
+and leave the weighting of each component to the particular instructor
+using it.
+
+We will provide notes and documentation for faculty on the scenario
+motivation, learning objectives, keywords and topics, formative and
+summative assessment suggestions, descriptions of how the exercise
+maps to knowledge areas listed in CS2013, and suggestions for
+integration into non-security courses.
+
+Faculty are likely interested in the answers to these questions
+because EDURange scenarios involve not only the technical details and
+mechanics of using the AWS infrastructure, but also the security and
+Computer Science curriculum issues that each scenario provokes.  We
+plan to spend a significant amount of time documenting these
+relationships.  An initial taste of this kind of information
+(necessarily brief, and far from complete) is given in
+Section~\ref{sec:modules} for each EDURange exercise description.
+
+\subsection{Activity III: Webinar and Workshops}
+
+Our third major activity focuses on a specific set of
+community--building exercises that are directly linked to two
+components of this proposal: $(1)$ providing an example course outline
+to act as a default ``setting'' for all the EDURange scenarios, and
+$(2)$ acquiring assessment of and feedback on EDURange itself.  This
+is a faculty--centric activity and involves the organization of both
+virtual meetings and face--to--face workshops.  Our plans for these
+events are opportunistic in reducing costs in that they take advantage
+of our existing connections with our community and co-location at
+independent events.
+
+\subsubsection{A Short Course ``Webinar''}
+
+Many faculty face the challenge of formulating a course design and
+syllabus; it is a central part of our job.  When faced with the task
+of creating a security course, or even of finding a set of security
+course modules to incorporate into a non-security course, some
+guidance is valuable, even if it is a rough course outline or template
+or categorized list of readings. Such artifacts, simple as they are,
+can be quite valuable because they impose a basic intellectual
+structure on an expansive and intricate topic.  We plan to present the
+outline for an introductory security course to an audience of
+instructors. The audience can then use this outline to jumpstart their
+own course planning.
+
+Many proposals for building cybersecurity capacity via the training or
+professional development of faculty can suffer from the practical
+costs and difficulties of arranging continued and costly
+face--to--face meetings.  We recognize these challenges, and in
+response to the CS2013 panel findings on cybersecurity suggesting the
+design of a few MOOC-style courses, we have designed an online
+webinar, the purpose of which is to present the outline of a
+``typical'' introductory information security course outline in a
+short course style.
+
+Our intent is to conduct hour-long online video chats with the
+EDURange community we have identified over the past few years
+(attendees at our workshops and BoFs, other colleagues from
+cybersecurity venues and groups).  We plan a total of 12..15 of these
+sessions, which will take place via Google Plus video Hangouts (or
+other suitable mechanism) and be streamed and saved to YouTube, and
+linked from our website \url{www.edurange.org}.  We plan to use the
+Piazza platform to continue and facilitate the discussions arising
+from the video chats or clarify issues raised by our presentation. The
+course outline itself will be available via our EDURange github
+account.  The bulk of the effort will be concentrated in preparatory
+work of the design and scripting of these sessions.
+
+Each session will present a component (i.e., topic) of a 10 week
+course and split time between the presentation by the lead
+facilitators and discussion among the attendees.  We assume that each
+component or course topic would be addressed by two to three classroom
+lectures per week.
+
+The course itself is based on a fusion of our own introductory
+security courses.  Although we are proud of our work, we do not claim
+to have a monopoly on the ``best'' cybersecurity course.  We have
+invited several other facilitators to join us in designing the course
+outline and helping guide the discussion during the video chat
+sessions.
+
+\noindent {\bf Benefit to the community} \hskip 0.1in We point out
+that our purpose is simply to provide a context in which EDURange
+exercises can be logically demonstrated; hopefully some of our
+audience of instructors finds the course syllabus to be useful as
+well, even as a place for them to start their own planning or course
+development.  With this webinar component of the proposal, we are
+essentially offering an expert panel as a resource to instructors
+seeking to (re)develop cybersecurity topics or courses.
+
+\subsubsection{Workshops}
+
+A vital part of this proposal is the assessment of how well these
+activities are supporting faculty in their vocation of delivering
+cybersecurity education.  Our specific assessment plans are discussed
+in Section~\ref{sec:eval}, but a critical precondtion of the
+assessment is obtaining feedback from instructors that use EDURange.
+For the past several years, we have held workshops at Computer Science
+educational conferences where faculty can experience an EDURange
+scenario.  We plan to continue holding such workshops.
+
+This activity is of tremendous value because it feeds into both our
+assessment mechanisms and our development priorities for EDURange
+(both the infrastructure and the scenarios).  We have found that
+workshop participants are a wonderful font of ideas for exercises,
+scoring strategies, and other improvements.  Workshops serve as
+valuable face--to--face time with our target audience and allow us to
+recruit further audience members by giving them firsthand experience
+with us and the infrastructure.
+
+\subsection{Additional Value of These Activities}
+
+The EDURange environment is meant to provide an efficient mechanism
+for students to immediately engage with a live exercise.  EDURange
+minimizes and eliminates the need for both faculty and students to
+deal with logistics and administrative setup work for labs, tutorials,
+or other ``hands-on'' cybersecurity experiences. 
+
+This proposal brings together a wide range of experts who teach
+cybersecurity on a regular basis in a variety of settings.  Their
+students are active participants in all facets of the project.  One
+important potential contribution of EDURange is that it can offer one
+model of how the CS2013 principles, knowledge, and skills related to
+cybersecurity can be implemented in actual exercises and lessons. We
+plan to actively map these relationships.
